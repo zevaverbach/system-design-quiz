@@ -123,12 +123,26 @@
         </div>
     </div>
 
-    <!-- Quiz DB Configuration -->
+    <!-- Quiz Configuration -->
     <script>
         const QUIZ_DB_URL = "https://zevaverbach.github.io/quiz-data/system-design.db";
+        const QUIZ_THEME = {
+            correctMessage: '✨ Correct! Well architected!',
+            funFactLabel: '💡 Fun fact:',
+            confettiColors: ['#00bcd4', '#b2ebf2', '#00838f', '#ffffff'],
+            confettiStreakColors: ['#00bcd4', '#b2ebf2', '#00e676'],
+            ranks: [
+                { min: 100, label: '🏗️ Distinguished Engineer - Perfect Round!' },
+                { min: 90,  label: '⚡ Principal Architect' },
+                { min: 75,  label: '🔧 Staff Engineer' },
+                { min: 60,  label: '💻 Senior Engineer' },
+                { min: 40,  label: '📚 Mid-Level Engineer' },
+                { min: 0,   label: '🌱 Junior Engineer' },
+            ]
+        };
     </script>
 
-    <!-- Quiz Engine -->
-    <script src="quiz-engine.js"></script>
+    <!-- Quiz Engine (shared) -->
+    <script src="https://zevaverbach.github.io/quiz-data/quiz-engine.js"></script>
 </body>
 </html>
