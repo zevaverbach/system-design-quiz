@@ -13,3 +13,12 @@
 .quiz-card::before {
     content: '⚙️';
 }
+
+.final-score {
+    background: none;
+    -webkit-background-clip: unset;
+    -webkit-text-fill-color: unset;
+    background-clip: unset;
+    color: var(--marble);
+    text-shadow: 0 0 20px rgba(212, 175, 55, 0.5);
+}
